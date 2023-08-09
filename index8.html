@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles7.css">
+  <title>depreciacion</title>
+</head>
+
+<body>
+
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <li><a href="index5.html">Inicio</a></li>
+        <li><a href="index4.html">RLHV-E</a></li>
+        <li><a href="index6.html">Computadores</a></li>
+        <li><a href="index7.html">Ubicación</a></li>
+        <li><a href="index8.html">Depreciacion</a></li>
+        <li><a href="index9.html">Informe</a></li>
+        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+  <div class="table-container">
+    <caption class="caption">Depreciacion: Depreciación anual = (Costo inicial - Valor residual) / Vida útil
+      <li>Costo inicial: El costo original del computador.</li>
+      <li>Valor residual: El valor esperado del computador al final de su vida útil. Es el valor que se espera obtener
+        por la venta del activo al final de su vida útil.</li>
+      <li>Vida útil: La cantidad de años o períodos durante los cuales se espera que el computador sea útil.</li>
+    </caption>
+    <h1>depreciacion</h1>
+    <input type="text" id="searchInput2" placeholder="Buscar por id de equipo">
+    <table>
+      <thead>
+        <tr>
+          <th>ID Equipo</th>
+          <th>Costo computador</th>
+          <th>Valor de rescate</th>
+          <th>Total de unidades estimadas</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody2">
+        <tr>
+          <td>1001</td>
+          <td>1</td>
+          <td>Sala A</td>
+          <td>1000</td>
+          <td>3333</td>
+          <td>
+            <span class="delete" onclick="confirmDelete(this)">🗑️</span>
+            <span class="edit" onclick="enableEdit(this)">✏️</span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    <button id="btnAgregar">Añadir</button>
+  </div>
+  </div>
+
+
+
+
+  <div class="botones-container1">
+    <button class="boton-volver"><a href="index7.html">Volver</a></button>
+    <button class="boton-seguir"><a href="index9.html">Seguir</a></button>
+  </div>
+
+  <script src="script/script2.js"></script>
+  <script src="script/script8.js"></script>
+
+</body>
+
+</html>

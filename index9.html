@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles8.css">
+  <title>Informe</title>
+</head>
+
+<body>
+
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <li><a href="index5.html">Inicio</a></li>
+        <li><a href="index4.html">RLHV-E</a></li>
+        <li><a href="index6.html">Computadores</a></li>
+        <li><a href="index7.html">Ubicación</a></li>
+        <li><a href="index8.html">Depreciacion</a></li>
+        <li><a href="index9.html">Informe</a></li>
+        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+  <div class="regis">
+    <h1>Registro de Computadores</h1>
+  </div>
+
+
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>ID del equipo</th>
+        <th>ID de la hoja de vida del equipo</th>
+        <th>Nombre del SO</th>
+        <th>Nombre del sistema</th>
+        <th>Modelo del sistema</th>
+        <th>Precauciones de utilización</th>
+        <th>Personas responsables</th>
+        <th>Observaciones generales</th>
+        <th>Mantenimiento asignado</th>
+        <th>Reparación asignada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>123</td>
+        <td>Windows 10</td>
+        <td>Sistema ABC</td>
+        <td>Modelo XYZ</td>
+        <td>Usar guantes protectores</td>
+        <td>John Doe</td>
+        <td>Ninguna observación</td>
+        <td>Mantenimiento A</td>
+        <td>Reparación B</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>456</td>
+        <td>Linux</td>
+        <td>Sistema DEF</td>
+        <td>Modelo PQR</td>
+        <td>Evitar exposición al agua</td>
+        <td>Jane Smith</td>
+        <td>Requiere revisión</td>
+        <td>Mantenimiento B</td>
+        <td>Reparación C</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="container">
+    <div class="left-box">
+      <table class="blue-table">
+        <caption>Ubicacion: La ubicacion se basara segun el area donde se encuentre el personal de trabajo, por ejemplo
+          el administrador, el tecnico de sistemas, empleado y gerencia, el nombre del personal responsable estara
+          registrado en la hoja de vida del computador</caption>
+        <thead>
+          <tr>
+            <th>Numero Hoja de Vida</th>
+            <th>ID Equipo</th>
+            <th>Ubicacion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sala A</td>
+            <td>administrador</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="right-box">
+      <table class="blue-table">
+        <caption>Depreciacion: Depreciación anual = (Costo inicial - Valor residual) / Vida útil
+          <li>Costo inicial: El costo original del computador.</li>
+          <li>Valor residual: El valor esperado del computador al final de su vida útil. Es el valor que se espera
+            obtener por la venta del activo al final de su vida útil.</li>
+          <li>Vida útil: La cantidad de años o períodos durante los cuales se espera que el computador sea útil.</li>
+        </caption>
+        <thead>
+          <tr>
+            <th>ID Equipo</th>
+            <th>Costo computador</th>
+            <th>Valor de rescate</th>
+            <th>total de unidades estimadas durante la vida útil del computador</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>1</td>
+            <td>Sala A</td>
+            <td>1000</td>
+            <td>3333</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="boton-container">
+    <button class="boton-descargar" onclick="descargarInforme()">
+      <i class="fa fa-download"></i>
+      Descargar informe
+    </button>
+  </div>
+
+  <div class="botones-container1">
+    <button class="boton-volver"><a href="index8.html">Volver</a></button>
+  </div>
+  <script src="script/script3.js"></script>
+
+</body>
+
+</html>

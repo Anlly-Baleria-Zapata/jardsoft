@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles4.css">
+
+  <title>Registro de Hoja de Vida del Equipo</title>
+
+</head>
+
+<body>
+
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <li><a href="index5.html">Inicio</a></li>
+        <li><a href="index4.html">RLHV-E</a></li>
+        <li><a href="index6.html">Computadores</a></li>
+        <li><a href="index7.html">Ubicación</a></li>
+        <li><a href="index8.html">Depreciacion</a></li>
+        <li><a href="index9.html">Informe</a></li>
+        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+  <h1>Registro de Hoja de Vida del Equipo</h1>
+
+
+  <div class="form-container">
+    <form id="registroForm">
+      <label for="idEquipo">ID del Equipo<span class="required">*</span></label>
+      <input type="text" id="idEquipo" required>
+
+      <label for="idHojaVida">ID de la Hoja de Vida del Equipo<span class="required">*</span></label>
+      <input type="text" id="idHojaVida" required>
+
+      <label for="nombreSO">Nombre del SO<span class="required">*</span></label>
+      <input type="text" id="nombreSO" required>
+
+      <label for="nombreSistema">Nombre del Sistema<span class="required">*</span></label>
+      <input type="text" id="nombreSistema" required>
+
+      <label for="modeloSistema">Modelo del Sistema<span class="required">*</span></label>
+      <input type="text" id="modeloSistema" required>
+
+      <label for="precauciones">Precauciones de Utilización<span class="required">*</span></label>
+      <input type="text" id="precauciones" required>
+
+      <label for="responsables">Personas Responsables<span class="required">*</span></label>
+      <input type="text" id="responsables" required>
+
+      <label for="observaciones">Observaciones Generales<span class="required">*</span></label>
+      <input type="text" id="observaciones" required>
+
+      <label for="mantenimientoAsignado">Mantenimiento Asignado</label>
+      <input type="text" id="mantenimientoAsignado">
+
+      <label for="reparacionAsignada">Reparación Asignada</label>
+      <input type="text" id="reparacionAsignada">
+
+      <button type="button" onclick="registrar()">Registrar</button>
+    </form>
+  </div>
+
+  <div class="overlay" id="modalOverlay">
+    <div class="modal">
+      <p>Los registros fueron almacenados correctamente.</p>
+      <button onclick="aceptarRedireccion()">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="script/script22.js"></script>
+
+  <div class="botones-container">
+    <button class="boton-volver"><a href="index5.html">Volver</a></button>
+    <button class="boton-seguir"><a href="index6.html">Seguir</a></button>
+  </div>
+
+</body>
+
+</html>

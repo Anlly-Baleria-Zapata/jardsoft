@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles3.css">
+  <title>Registrarse</title>
+</head>
+
+<body>
+  <form class="login-form">
+    <div class="iniciar">
+      <h2>Registrarse</h2>
+    </div>
+    <div class="form-group">
+      <label for="rol">Elija el Rol que le otorgo el administrador:</label>
+      <select id="rol" name="rol">
+        <option value="rol1" class="rol1">TECNICO DE SISTEMAS</option>
+        <option value="rol2" class="rol2">EMPLEADO</option>
+        <option value="rol3" class="rol3">GERENCIA</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="documento">Identificacion:</label>
+      <input type="text" id="documento" name="documento" required>
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="contrasena">Elija su Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+    </div>
+    <div class="form-group">
+      <label for="contrasena">Repita su Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+    </div>
+    <div class="form-group">
+      <input type="submit" name="registro" value="Terminar registro">
+    </div>
+  </form>
+
+  <div class="container">
+    <button class="button"><a href="index1.html">Ir a la página principal</a></button>
+    <button class="button"><a href="index2.html">Iniciar Sesión</a></button>
+  </div>
+</body>
+
+</html>

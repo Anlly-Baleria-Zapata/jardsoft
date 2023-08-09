@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles7.css">
+  <title>Ubicación</title>
+</head>
+
+<body>
+
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <li><a href="index5.html">Inicio</a></li>
+        <li><a href="index4.html">RLHV-E</a></li>
+        <li><a href="index6.html">Computadores</a></li>
+        <li><a href="index7.html">Ubicación</a></li>
+        <li><a href="index8.html">Depreciacion</a></li>
+        <li><a href="index9.html">Informe</a></li>
+        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <div class="table-container">
+      <caption class="caption">Ubicacion: La ubicacion se basara segun el area donde se encuentre el personal de
+        trabajo, por ejemplo el administrador, el tecnico de sistemas, empleado y gerencia, el nombre del personal
+        responsable estara registrado en la hoja de vida del computador</caption>
+      <h1>buscar ubicacion</h1>
+      <input type="text" id="searchInput1" placeholder="Buscar ubicacion">
+      <table>
+        <thead>
+          <tr>
+            <th>Numero Hoja de Vida</th>
+            <th>ID Equipo</th>
+            <th>Ubicacion</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody1">
+          <tr>
+            <td>1</td>
+            <td>Sala A</td>
+            <td>administrador</td>
+            <td>
+              <span class="delete" onclick="confirmDelete(this)">🗑️</span>
+              <span class="edit" onclick="enableEdit(this)">✏️</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="botones-container1">
+    <button class="boton-volver"><a href="index6.html">Volver</a></button>
+    <button class="boton-seguir"><a href="index8.html">Seguir</a></button>
+  </div>
+
+  <script src="script/script7.js"></script>
+
+</body>
+
+</html>
